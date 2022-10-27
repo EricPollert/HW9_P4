@@ -49,14 +49,6 @@ int r, c;
   }
   }
 
-  for(city_COL = 0; cit_COL < N_COL; cit_COL++){
-    if(city_COL == 0)
-      cout << "Grand Junction: "
-           << CountUnhealthySensitive(AirQuality_Index, N_ROWS, city_COL)
-           << " times." << endl;
-
-}
-
 int CountUnhealthySensitive(int matrix[][3], int N_ROWS, int city_COL){
 
   int count = 0;
