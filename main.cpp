@@ -1,3 +1,8 @@
+// John Thompson and Jake Thompson helped me work through the parts of the handout I was able to complete
+
+c++ inverse matrix program - the crazy programmer
+
+
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -5,7 +10,8 @@
 using namespace std;
 
 void printMatrix_3col(int matrix[][3], int N_ROWS, int N_COL);
-int AirQuality_Index(int matrix [][3], int N_ROWS, int city_COL);
+int meanAirQuality_Index(int matrix [][3], int N_ROWS, int city_COL);
+int CountUnhealthySensitive(int matrix[][3], int N_ROWS, int city_COL);
 
 int main() {
 
@@ -44,5 +50,26 @@ int r, c;
   }
   }
 
+int CountUnhealthySensitive(int matrix[][3], int N_ROWS, int city_COL){
+
+  int count = 0
+  int unhealthy_level = 101;
+  int row;
+
+  for (row = 0; row < N_ROWS; r++){
+    if (matrix[row][city_COL] >= unhealthy_level)
+      count++;
+  }
+  return count;
+}
+
+  
+  /*int meanAirQualityIndex(int Matrix[][3], int N_ROWS, int city_COL){
+    int sum = 0
+    int r, average;
+
+    for(r = 0; r < N_ROWS; r++)
+      
+  } */
   
 }
